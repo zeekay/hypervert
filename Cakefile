@@ -1,13 +1,13 @@
 exec = require('shortcake').exec.interactive
 path = require 'path'
 
-option '-b', '--browser',                                                'run tests in browser'
-option '-g', '--grep [filter]',                                          'test filter'
-option '-t', '--test [file]',                                            'test to run'
+option '-b', '--browser',       'run tests in browser'
+option '-g', '--grep [filter]', 'test filter'
+option '-t', '--test [file]',   'test to run'
 
 task 'build', 'compile src/*.coffee to lib/*.js', ->
   exec 'node_modules/.bin/coffee -bcm -o lib/ src/'
-  exec 'node_modules/.bin/coffee -bcm -o .test test/'
+  exec 'node_modules/.bin/coffee -bcm -o .test/ test/'
 
 task 'test', 'run tests', (options) ->
   test = options.test ? '.test'
