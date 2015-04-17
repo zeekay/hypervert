@@ -1,0 +1,36 @@
+{
+  "name": "hypervert",
+  "version": "0.0.1",
+  "description": "Convert HTML to Hyperscript.",
+  "main": "index.js",
+  "dependencies": {
+    "html2hscript": "^1.0.4"
+  },
+  "devDependencies": {
+    "chai": "^2.2.0",
+    "coffee-script": "^1.9.2",
+    "mocha": "^2.2.4",
+    "mocha-http-server": "^0.3.4",
+    "shortcake": "^0.2.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zeekay/hypervert.git"
+  },
+  "keywords": [
+    "html",
+    "javascript",
+    "hyperscript",
+    "virtual-dom",
+    "vdom"
+  ],
+  "author": "Zach Kelling",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zeekay/hypervert/issues"
+  },
+  "homepage": "https://github.com/zeekay/hypervert"
+}
